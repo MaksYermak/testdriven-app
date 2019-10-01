@@ -7,8 +7,6 @@ services:
     build:
       context: ./services/users
       dockerfile: Dockerfile-prod
-    expose:
-      - 5000
     environment:
       - APP_SETTINGS=project.config.ProductionConfig
       - DATABASE_URL=postgres://postgres:postgres@users-db:5432/users_prod
@@ -25,6 +23,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - 5435:5432
+    expose:
+      - 5000
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
@@ -35,5 +35,7 @@ services:
     restart: always
     ports:
       - 80:80
+    expose:
+      - 5000
     depends_on:
       - users
