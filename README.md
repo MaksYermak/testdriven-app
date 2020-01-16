@@ -1,2 +1,3 @@
-# testdriven-app
-Code evaluation tool for grading code exercises, similar to Codecademy, with Python, Flask, JavaScript, and ReactJS
+# Microservices with Docker, Flask, and React
+
+[![Build Status](https://travis-ci.org/MaksYermak/testdriven-app.svg?branch=master)](https://travis-ci.org/MaksYermak/testdriven-app)
